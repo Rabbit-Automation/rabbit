@@ -1,17 +1,12 @@
 .navbar {
-  /* background: linear-gradient(90deg, rgb(38, 130, 167) -4%, rgb(255, 255, 255) 8%, rgb(255, 255, 255) 30%,rgb(71, 161, 197) 60%, rgb(38, 130, 167) 100%); */
-  /* background-color: rgba(250, 250, 250, 0.568); */
-  /* background: linear-gradient(0, rgb(201, 201, 201) 1%,rgb(255, 255, 255)90%); */
-  background-color: rgb(0, 0, 0, 0.76);
-  height: 80px;
+  background-color: rgb(0, 0, 0, 0.85);
+  height: 100px;
   display: flex;
-  justify-content: center;
   align-items: center;
   font-size: 1.2rem;
   position: sticky;
   top: 0;
   z-index: 999;
-  /* background-image: url(/images/header_background.png); */
 }
 
 .navbar-container {
@@ -51,13 +46,13 @@
   grid-gap: 10px;
   list-style: none;
   text-align: center;
-  width: 60vw;
+  width: 80vw;
   justify-content: end;
   margin-right: 2rem;
 }
 
 .nav-item {
-  height: 80px;
+  height: 100px;
 }
 
 .nav-links {
@@ -72,10 +67,11 @@
 .nav-links:hover {
   border-bottom: 4px solid #fff;
   transition: all 0.2s ease-out;
+  color: white;
 }
 
 .fa-bars {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 .nav-links-mobile {
@@ -86,7 +82,7 @@
   display: none;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 960px) {
   .NavbarItems {
     position: relative;
   }
@@ -97,14 +93,14 @@
     width: 100%;
     height: 90vh;
     position: absolute;
-    top: 80px;
+    top: 100px;
     left: -100%;
     opacity: 1;
     transition: all 0.5s ease;
   }
 
   .nav-menu.active {
-    background: rgb(192, 192, 192);
+    background: rgb(0, 0, 0);
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
@@ -113,10 +109,11 @@
 
   .nav-links {
     text-align: center;
-    padding: 2rem;
+    padding: 2.5rem;
     width: 100%;
     display: table;
-    border-bottom: solid rgba(0, 0, 0, 0.26);
+    border-bottom: solid rgba(255, 255, 255, 0.85) 0.1px;
+    border-top: solid rgba(255, 255, 255, 0.85) 0.1px;
   }
 
   .nav-links:hover {
@@ -144,7 +141,7 @@
   }
 
   .fa-times {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 2rem;
   }
 
