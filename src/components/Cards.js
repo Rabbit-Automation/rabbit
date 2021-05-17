@@ -104,28 +104,37 @@ function Cards() {
               text="asdasas"
               label="Allen Bradley"
               path="/marcas"
-              marca="Allen Bradley"
+              marca="Allen Bradley logo"
             />
             <CardItem
               src="images/marcas/mitsubishi-electric.png"
               text="asdasas"
               label="Mitsubishi Electric"
               path="/marcas"
-              marca="Mitsubishi Electric"
+              marca="Mitsubishi Electric logo"
             />
-            <CardItem
-              src="images/marcas/rice-lake.png"
-              text="asdasas"
-              label="Rice Lake"
-              path="/marcas"
-              marca="Rice Lake"
-            />
-            <CardItem
+          </ul>
+          <ul className="cards__items">
+          <CardItem
               src="images/marcas/siemens.png"
               text="asdasas"
               label="SIEMENS"
               path="/marcas"
-              marca="SIEMENS"
+              marca="SIEMENS logo"
+            />
+            <CardItem
+              src="https://www.logaster.com.es/blog/wp-content/uploads/sites/2/2020/06/t_zebra-logo_12.png"
+              text="asdasas"
+              label="ZEBRA"
+              path="/marcas"
+              marca="ZEBRA logo"
+            />
+            <CardItem
+              src="images/marcas/color_plus.jpeg"
+              text="asdasas"
+              label="COLOR PLUS"
+              path="/marcas"
+              marca="SIEMENS logo"
             />
           </ul>
         </div>

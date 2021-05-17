@@ -34,8 +34,7 @@
   flex: 1;
   margin: 0 1rem;
   border-radius: 10px;
-  height: 200px;
-  width: 250px;
+  width: 300px;
 }
 
 .cards__item__link {
@@ -115,8 +114,8 @@
 }
 
 .card-header {
-  padding-top: 100px;
   background-color: transparent;
+  border-bottom: transparent 1.5px;
 }
 
 .p-10 {
@@ -131,7 +130,7 @@
 
 @media only screen and (min-width: 1024px) {
   .cards__items {
-    display: flex;
+    display: flex; 
   }
 }
 

@@ -1,0 +1,87 @@
+.footer--wrap {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.816);
+	padding-top: 40px;
+}
+
+.container-box {
+  /* height: 300px; */
+  /* width: 25%; */
+	padding: 20px 0px;
+  flex-basis: 250px;
+  flex-grow: 1;
+	padding-left: 30px;
+	color: #fff;
+}
+
+.logo-footer {
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-container img {
+  width: 50%;
+}
+
+.services-container {
+	color: white;
+	font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+	font-size: 20px;
+}
+
+.services--list {
+	font-weight: 200;
+	list-style:none;
+	padding-top: 2rem;
+}
+
+.service--item {
+	font-size: 16px;
+}
+
+.social-media-container a {
+	padding-right: 20px;
+	font-size: 30px;
+	color: white;
+}
+
+#locate {
+	font-size: 16px;
+	font-weight: 200;
+	color: #fff;
+}
+
+.social-media-container h5 {
+	color: white;
+}
+
+.contact-container {
+	color: white;
+	font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+	font-size: 1rem;
+}
+
+.contact-container .name {
+	font-weight: 400;
+}
+
+.contact-container p {
+	margin-bottom: 0;
+}
+.contact-container a {
+	color: #fff;
+	margin-bottom: 0;
+}
+
+.contact {
+	padding-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .logo-container img {
+    width: 30%;
+  }
+}

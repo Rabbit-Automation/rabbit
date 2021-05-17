@@ -1,6 +1,5 @@
 import React from "react";
 import "../App.css";
-import { Button } from "./Button";
 import "./HeroSection.css";
 import "./HeroSection.scss";
 
@@ -16,13 +15,6 @@ function HeroSection() {
             industriales
           </h2>
         </div>
-        {/* <Button
-          className="btns"
-          buttonStyle="btn--outline"
-          buttonSize="btn--large"
-        >
-          CONOCER M&Aacute;S
-        </Button> */}
       </div>
       <div className="content-arrow">
         <a href="#conocenos">
