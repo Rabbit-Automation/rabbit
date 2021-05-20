@@ -6,7 +6,7 @@ import "./Cards.css";
 function Cards() {
   return (
     <div className="cards" id="conocenos">
-      <h2>Con&oacute;cenos</h2>
+      <h3 className="text-center">Con&oacute;cenos</h3>
       <div className="container">
         <div className="row">
           <div className="col-12">
@@ -56,7 +56,7 @@ function Cards() {
         </div>
       </div>
 
-      <div className="container">
+      <div className="container pt-5">
         <div className="row">
           <div className="col-12">
             <div className="card-header text-center">
@@ -83,13 +83,13 @@ function Cards() {
               </div>
               <div className="card">
                 <img
-                  src="/images/general/beneficios.png"
+                  src="/images/general/beneficios_2.svg"
                   alt="beneficios del monitoreo"
                 />
               </div>
             </div>
           </div>
-          <div className="col-12">
+          <div className="col-12 pt-5">
             <div className="card-header text-center">
               <h3>Marcas</h3>
             </div>

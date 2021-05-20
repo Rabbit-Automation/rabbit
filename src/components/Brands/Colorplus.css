@@ -1,0 +1,56 @@
+.color-plus-backgroud-header {
+  width: 100%;
+  height: 140px;
+  position: absolute;
+}
+
+.color-plus-backgroud-header img {
+  padding: 0px 100px;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+
+.color-plus-margintop-header {
+  margin-top: 150px;
+  padding-top: 50px;
+}
+
+.filament-features {
+  background: linear-gradient(#000000, #1e6f94);
+  color: white;
+}
+
+.feature-card-header {
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.feature-card-text {
+  font-weight: 200;
+}
+
+.feature-card-image {
+  font-size: 30px;
+  text-align: center;
+}
+
+.feature-card-image i{
+  max-width: 10%;
+}
+
+@media screen and (max-width: 600px) {
+	.color-plus-backgroud-header {
+		height: 60px;
+	}
+
+  .color-plus-backgroud-header img {
+    padding: 0px 10px;
+  }
+
+  .color-plus-margintop-header {
+    margin-top: 60px;
+    padding-top: 0px;
+  }
+
+}
