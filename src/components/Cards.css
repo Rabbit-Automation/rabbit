@@ -34,7 +34,8 @@
   flex: 1;
   margin: 0 1rem;
   border-radius: 10px;
-  width: 300px;
+  /* width: 300px; */
+  width: 250px;
 }
 
 .cards__item__link {

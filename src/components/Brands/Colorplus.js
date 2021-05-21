@@ -1,9 +1,63 @@
 import React from "react";
-/* import CardItem from "../CardItem"; */
+import CardItem from "../CardItem";
 import "./Colorplus.css";
-import Carousel from "../Carousel";
+
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+
+const responsive = {
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
+    items: 5,
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 600 },
+    items: 2,
+  },
+  mobile: {
+    breakpoint: { max: 600, min: 0 },
+    items: 1,
+  },
+};
 
 function Colorplus() {
+  const text = [
+    "Skiin",
+    "Red Dragon",
+    "Blue Whale",
+    "Black Panther",
+    "Silver Wolf",
+    "Grey Rhino",
+    "Green Cocodrile",
+    "Brown Bear",
+    "Skiin",
+    "Orange Tiger",
+    "Yellow Bee",
+    "Purple Bat",
+  ];
+  const items = [];
+
+  for (var index = 0; index < 12; index++) {
+    items.push(
+      <CardItem
+        src={
+          "images/marcas/filamentos/color_plus_filament_" +
+          JSON.stringify(index + 1) +
+          ".jpg"
+        }
+        text=""
+        label={"Filamento pla " + text[index] + " 1.75mm"}
+        path="#"
+        marca="Impresiones personalizadas"
+      />
+    );
+  }
+
   return (
     <>
       <div className="color-plus-backgroud-header">
@@ -170,7 +224,30 @@ function Colorplus() {
         </div>
       </section>
       <section className="filaments-type">
-        <Carousel/>
+        <Carousel
+          responsive={responsive}
+          additionalTransfrom={0}
+          arrows
+          autoPlaySpeed={3000}
+          centerMode={false}
+          className=""
+          containerClass="container-with-dots"
+          dotListClass=""
+          draggable
+          focusOnSelect={false}
+          infinite
+          itemClass=""
+          keyBoardControl
+          minimumTouchDrag={80}
+          renderButtonGroupOutside={false}
+          renderDotsOutside={false}
+          showDots={false}
+          sliderClass=""
+          slidesToSlide={1}
+          swipeable
+        >
+          {items}
+        </Carousel>
       </section>
     </>
   );

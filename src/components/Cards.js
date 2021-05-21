@@ -123,7 +123,7 @@ function Cards() {
               marca="SIEMENS logo"
             />
             <CardItem
-              src="https://www.logaster.com.es/blog/wp-content/uploads/sites/2/2020/06/t_zebra-logo_12.png"
+              src="images/marcas/zebra.png"
               text=""
               label="ZEBRA"
               path="/marcas"

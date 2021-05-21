@@ -39,6 +39,10 @@
   max-width: 10%;
 }
 
+.filaments-type {
+  padding: 70px 10%;
+}
+
 @media screen and (max-width: 600px) {
 	.color-plus-backgroud-header {
 		height: 60px;
