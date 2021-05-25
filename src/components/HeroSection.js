@@ -6,7 +6,7 @@ import "./HeroSection.scss";
 function HeroSection() {
   return (
     <div className="hero-container">
-      <img src="/images/general/background_2.jpg" alt="" />
+      <img src="images/general/background_2.jpg" alt="" />
       <div className="hero-btns-text">
         <div className="text">
           <h1>Rabbit Automation and Technologies</h1>

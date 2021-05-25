@@ -19,7 +19,7 @@ function Creality() {
                 <div className="col-12">
                   <div className="card-body">
                     <div className="row">
-                      <div className="col-sm-6">
+                      <div className="col-lg-6">
                         <div className="card-header">
                           <h5>Optimización topológica</h5>
                         </div>
@@ -31,8 +31,8 @@ function Creality() {
                           </p>
                           <p>
                             La <strong>impresión 3D</strong> ofrece amplias
-                            posibilidades de diseño y optimización topológica ,
-                            lo que te permite dar con la combinación óptima de{" "}
+                            posibilidades de diseño y optimización topológica,
+                            lo que te permite dar con la combinación óptima de
                             <strong>
                               resistencia, peso y costes de producción
                             </strong>
@@ -40,7 +40,7 @@ function Creality() {
                           </p>
                         </div>
                       </div>
-                      <div className="col-sm-6">
+                      <div className="col-lg-6">
                         <div className="container-col-6-img">
                           <img
                             src="images/marcas/creality_img_relleno.jpg"
@@ -53,7 +53,7 @@ function Creality() {
 
                   <div className="card-body">
                     <div className="row row-reverse">
-                      <div className="col-sm-6">
+                      <div className="col-lg-6">
                         <div className="container-col-6-img">
                           <img
                             src="images/marcas/creality_gears.jpeg"
@@ -61,7 +61,7 @@ function Creality() {
                           />
                         </div>
                       </div>
-                      <div className="col-sm-6">
+                      <div className="col-lg-6">
                         <div className="card-header">
                           <h5>Optimización del montaje</h5>
                         </div>

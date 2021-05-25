@@ -100,6 +100,7 @@ function Cards() {
         <div className="cards__wrapper">
           <ul className="cards__items">
             <CardItem
+            cardInfo={false}
               src="images/marcas/allen-bradley.png"
               text=""
               label="Allen Bradley"
@@ -107,6 +108,7 @@ function Cards() {
               marca="Allen Bradley logo"
             />
             <CardItem
+            cardInfo={false}
               src="images/marcas/mitsubishi-electric.png"
               text=""
               label="Mitsubishi Electric"
@@ -116,6 +118,7 @@ function Cards() {
           </ul>
           <ul className="cards__items">
           <CardItem
+          cardInfo={false}
               src="images/marcas/siemens.png"
               text=""
               label="SIEMENS"
@@ -123,6 +126,7 @@ function Cards() {
               marca="SIEMENS logo"
             />
             <CardItem
+            cardInfo={false}
               src="images/marcas/zebra.png"
               text=""
               label="ZEBRA"
@@ -130,6 +134,7 @@ function Cards() {
               marca="ZEBRA logo"
             />
             <CardItem
+            cardInfo={false}
               src="images/marcas/color_plus.jpeg"
               text=""
               label="COLOR PLUS"

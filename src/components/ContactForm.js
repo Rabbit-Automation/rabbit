@@ -12,25 +12,25 @@ function ContactForm() {
           </div>
           <div className="card-body">
             <div className="row">
-              <div className="col-md-4">
+              <div className="col-md-4 contact-page">
                 <FooterContactInfo
                   name="Gabriel Conejo"
-                  phone="+52 712 195 9072"
+                  phone="712 195 9072"
                   email="gconejo.rabbit@gmail.com"
                 />
               </div>
-              <div className="col-md-4">
+              <div className="col-md-4 contact-page">
                 <FooterContactInfo
                   name="Oscar Conejo"
-                  phone="+52 442 457 5549"
+                  phone="442 457 5549"
                   email="oconejo.rabbit@gmail.com"
                 />
               </div>
-              <div className="col-md-4">
+              <div className="col-md-4 contact-page">
                 <FooterContactInfo
                   name="Josue Reyes"
-                  phone="+52 55 2954 0933"
-                  email="jos.regy@gmail.com"
+                  phone="55 2954 0933"
+                  email="rabbit.demos@gmail.com"
                 />
               </div>
             </div>
@@ -46,15 +46,15 @@ function ContactForm() {
                   <div className="col-md-6">
                     <div className="form-group">
                       <label for="nombre">*Nombre:</label>
-                      <input class="form-control" type="text" required />
+                      <input class="form-control" type="text" name="nombre" required />
                     </div>
                     <div className="form-group">
-                      <label for="nombre">*Apellidos:</label>
-                      <input class="form-control" type="text" required />
+                      <label for="apellidos">*Apellidos:</label>
+                      <input class="form-control" type="text" name="apellidos" required />
                     </div>
                     <div className="form-group">
-                      <label for="nombre">*Telefono:</label>
-                      <input class="form-control" type="text" required />
+                      <label for="telefono">*Telefono:</label>
+                      <input class="form-control" type="text" name="telefono" required />
                     </div>
                   </div>
                   <div className="col-md-6">
@@ -65,6 +65,7 @@ function ContactForm() {
                         className="form-control"
                         id="email"
                         aria-describedby="emailHelp"
+                        name="email"
                         required
                       />
                     </div>
@@ -74,6 +75,7 @@ function ContactForm() {
                         class="form-control"
                         id="mensaje"
                         rows="4"
+                        name="mensaje"
                         required
                       ></textarea>
                     </div>
@@ -83,6 +85,7 @@ function ContactForm() {
                         type="checkbox"
                         value=""
                         id="defaultCheck1"
+                        name="acepto_terminos"
                         required
                       />
                       <label class="form-check-label" for="defaultCheck1">
@@ -106,7 +109,7 @@ function ContactForm() {
             </div>
           </div>
           <div className="card-body">
-            <p>Carretera la Piedad km 03, San José, 76246 La Piedad, Qro.</p>
+            <p>Antigua Carretera a la Griega 210, 76246 La Piedad, Qro.</p>
           </div>
         </div>
       </div>

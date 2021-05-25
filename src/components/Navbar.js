@@ -14,7 +14,7 @@ function Navbar() {
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
             <img
-              src="/images/general/logo_b.png"
+              src="images/general/logo_b.png"
               alt="Rabbit Automation and Technologies logo"
               width="100"
             />

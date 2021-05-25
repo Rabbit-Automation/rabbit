@@ -8,56 +8,112 @@ import "react-multi-carousel/lib/styles.css";
 const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
-    breakpoint: { max: 4000, min: 3000 },
+    breakpoint: { max: 4000, min: 1600 },
     items: 5,
+    slidesToSlide: 1,
   },
   desktop: {
-    breakpoint: { max: 3000, min: 1024 },
+    breakpoint: { max: 1600, min: 1024 },
     items: 3,
+    slidesToSlide: 1,
   },
   tablet: {
     breakpoint: { max: 1024, min: 600 },
     items: 2,
+    slidesToSlide: 1,
   },
   mobile: {
     breakpoint: { max: 600, min: 0 },
     items: 1,
+    slidesToSlide: 1,
   },
 };
 
-function Colorplus() {
-  const text = [
-    "Skiin",
-    "Red Dragon",
-    "Blue Whale",
-    "Black Panther",
-    "Silver Wolf",
-    "Grey Rhino",
-    "Green Cocodrile",
-    "Brown Bear",
-    "Skiin",
-    "Orange Tiger",
-    "Yellow Bee",
-    "Purple Bat",
+function CarouselWithItems(index_model) {
+  const models = [
+    [
+      "PLA Skiin 1.75mm",
+      "PLA Red Dragon 1.75mm",
+      "PLA Blue Whale 1.75mm",
+      "PLA Black Panther 1.75mm",
+      "PLA Silver Wolf 1.75mm",
+      "PLA Grey Rhino 1.75mm",
+      "PLA Green Cocodrile 1.75mm",
+      "PLA Brown Bear 1.75mm",
+      "PLA Skiin 1.75mm",
+      "PLA Orange Tiger 1.75mm",
+      "PLA Yellow Bee 1.75mm",
+      "PLA Purple Bat 1.75mm",
+    ],
+    [
+      "ABS White Artic 1.75mm",
+      "ABS White Artic 2.85mm",
+      "ABS Black Cosmic 1.75mm",
+      "ABS Black Cosmic 2.85mm",
+      "ABS Blue Ocean 1.75mm",
+      "ABS Blue Ocean 2.85mm",
+      "ABS Red Lava 1.75mm",
+      "ABS Red Lava 2.85mm",
+    ],
   ];
-  const items = [];
+  const item = [];
 
-  for (var index = 0; index < 12; index++) {
-    items.push(
+  let index = 0;
+
+  while (index < models[index_model].length) {
+    item.push(
       <CardItem
+        key={index}
+        key_li={index}
         src={
-          "images/marcas/filamentos/color_plus_filament_" +
+          "images/marcas/filamentos/" +
+          /* ((index_model === 0 && "PLA") || (index_model === 1 && "ABS")) + */
+          (index_model === 0 ? "PLA" : "ABS") +
+          "/color_plus_filament_" +
           JSON.stringify(index + 1) +
           ".jpg"
         }
-        text=""
-        label={"Filamento pla " + text[index] + " 1.75mm"}
+        cardInfo={false}
+        label={models[index_model][index]}
         path="#"
         marca="Impresiones personalizadas"
       />
     );
+    index++;
   }
+  const componentCarousel = (
+    <Carousel
+      responsive={responsive}
+      additionalTransfrom={0}
+      arrows
+      autoPlay={false}
+      autoPlaySpeed={10000}
+      centerMode={false}
+      className=""
+      containerClass="container-with-dots"
+      customTransition="all 1s linear"
+      dotListClass="custom-dot-list-style"
+      draggable
+      focusOnSelect={false}
+      infinite
+      itemClass=""
+      keyBoardControl
+      minimumTouchDrag={80}
+      renderButtonGroupOutside={false}
+      renderDotsOutside={false}
+      removeArrowOnDeviceType={["tablet", "mobile"]}
+      showDots={true}
+      sliderClass=""
+      swipeable
+      transitionDuration={100}
+    >
+      {item}
+    </Carousel>
+  );
+  return componentCarousel;
+}
 
+function Colorplus() {
   return (
     <>
       <div className="color-plus-backgroud-header">
@@ -70,10 +126,10 @@ function Colorplus() {
           </div>
           <div className="card-body text-center">
             <p>
-              Somos distribuidores autorizados de <strong>Color Plus </strong>
-              elegimos usar filamentos Color Plus para impresoras 3D por su alta
-              calidad, ya que es fabricado con altos estándares para tus
-              impresiones en 3D.
+              Somos impresores aprobados de <strong>Color Plus</strong>,
+              imprimimos tus piezas con el mejor filamento premium de México y
+              con ello ofrecerte un servicio de la mejor calidad con los mejores
+              materiales.
             </p>
           </div>
         </div>
@@ -82,13 +138,16 @@ function Colorplus() {
         <div className="container">
           <div className="row">
             <div className="col-12">
+              <div className="card-header text-center">
+                <h3>Características</h3>
+              </div>
               <div className="card-body">
                 <div className="row">
                   <div className="col-md-4">
                     <div className="row">
                       <div className="col-sm-2">
                         <div className="feature-card-image">
-                          <i class="fas fa-medal"></i>
+                          <i className="fas fa-medal"></i>
                         </div>
                       </div>
                       <div className="col-sm-9">
@@ -109,7 +168,7 @@ function Colorplus() {
                     <div className="row">
                       <div className="col-sm-2">
                         <div className="feature-card-image">
-                          <i class="fas fa-dumbbell"></i>
+                          <i className="fas fa-dumbbell"></i>
                         </div>
                       </div>
                       <div className="col-sm-9">
@@ -130,7 +189,7 @@ function Colorplus() {
                     <div className="row">
                       <div className="col-sm-2">
                         <div className="feature-card-image">
-                          <i class="fas fa-pen-fancy"></i>
+                          <i className="fas fa-pen-fancy"></i>
                         </div>
                       </div>
                       <div className="col-sm-9">
@@ -158,7 +217,7 @@ function Colorplus() {
                     <div className="row">
                       <div className="col-sm-2">
                         <div className="feature-card-image">
-                          <i class="fas fa-palette"></i>
+                          <i className="fas fa-palette"></i>
                         </div>
                       </div>
                       <div className="col-sm-9">
@@ -179,7 +238,7 @@ function Colorplus() {
                     <div className="row">
                       <div className="col-sm-2">
                         <div className="feature-card-image">
-                          <i class="fas fa-gem"></i>
+                          <i className="fas fa-gem"></i>
                         </div>
                       </div>
                       <div className="col-sm-9">
@@ -200,7 +259,7 @@ function Colorplus() {
                     <div className="row">
                       <div className="col-sm-2">
                         <div className="feature-card-image">
-                          <i class="fas fa-pencil-ruler"></i>
+                          <i className="fas fa-pencil-ruler"></i>
                         </div>
                       </div>
                       <div className="col-sm-9">
@@ -224,30 +283,19 @@ function Colorplus() {
         </div>
       </section>
       <section className="filaments-type">
-        <Carousel
-          responsive={responsive}
-          additionalTransfrom={0}
-          arrows
-          autoPlaySpeed={3000}
-          centerMode={false}
-          className=""
-          containerClass="container-with-dots"
-          dotListClass=""
-          draggable
-          focusOnSelect={false}
-          infinite
-          itemClass=""
-          keyBoardControl
-          minimumTouchDrag={80}
-          renderButtonGroupOutside={false}
-          renderDotsOutside={false}
-          showDots={false}
-          sliderClass=""
-          slidesToSlide={1}
-          swipeable
-        >
-          {items}
-        </Carousel>
+        <div className="col-12">
+          <div className="card-header text-center">
+            <h3>Filamentos Color Plus</h3>
+          </div>
+        </div>
+        <div className="card-header">
+          <h3>PLA</h3>
+        </div>
+        {CarouselWithItems(0)}
+        <div className="card-header pt-5">
+          <h3>ABS</h3>
+        </div>
+        {CarouselWithItems(1)}
       </section>
     </>
   );

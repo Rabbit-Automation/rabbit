@@ -20,25 +20,25 @@ function Footer() {
         </ul>
         <h5>Ubicación</h5>
         <p id="locate">
-          Carretera la Piedad km 03, San José, 76246 La Piedad, Qro.
+          Antigua Carretera a la Griega 210, 76246 La Piedad, Qro.
         </p>
       </div>
       <div className="container-box contact-container">
         <h5>Contáctanos</h5>
         <FooterContactInfo
           name="Oscar Conejo"
-          phone="+52 442 457 5549"
+          phone="442 457 5549"
           email="oconejo.rabbit@gmail.com"
         />
         <FooterContactInfo
           name="Gabriel Conejo"
-          phone="+52 712 195 9072"
+          phone="712 195 9072"
           email="gconejo.rabbit@gmail.com"
         />
         <FooterContactInfo
           name="Josue Reyes"
-          phone="+52 55 2954 0933"
-          email="jos.regy@gmail.com"
+          phone="55 2954 0933"
+          email="rabbit.demos@gmail.com"
         />
       </div>
       <div className="container-box social-media-container">
@@ -48,17 +48,17 @@ function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i class="fab fa-facebook"></i>
+          <i className="fab fa-facebook"></i>
         </a>
         <a
           href="https://www.youtube.com/channel/UClYToirFDmVOk1mAh8I8-NQ"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i class="fab fa-youtube"></i>
+          <i className="fab fa-youtube"></i>
         </a>
         <a href="/" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-instagram"></i>
+          <i className="fab fa-instagram"></i>
         </a>
       </div>
       <div className="container-box logo-container">

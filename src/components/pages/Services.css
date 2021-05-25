@@ -1,0 +1,59 @@
+.services-container-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(255, 255, 255);
+  z-index: 100;
+}
+
+.services-container-wrap-reverse {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  background-color: rgb(255, 255, 255);
+  z-index: 100;
+}
+
+.container-box-service {
+  flex-basis: 350px;
+  flex-grow: 1;
+  padding: 5% 2.5%;
+}
+
+.container-box-service img {
+  width: 100%;
+  border-radius: 15px;
+}
+.demos {
+  background: #000428;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #ffffff;
+}
+
+.demos a {
+  color: #ffffff;
+}
+
+.header-section {
+  padding: 0px 20px;
+}
+.armado {
+  border: solid black 1px;
+  padding: 0%;
+  flex-basis: 300px;
+  flex-grow: 1;
+}
+
+@media screen and (max-width: 716px) {
+  .container-box-service {
+    padding: 0% 2.5%;
+  }
+
+  .header-section h5 {
+    padding: 20px 0px;
+    font-size: 16px;
+  }
+
+  .armado {
+    padding: 0%;
+  }
+}

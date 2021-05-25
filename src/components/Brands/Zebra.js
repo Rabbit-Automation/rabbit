@@ -1,4 +1,5 @@
 import React from "react";
+import Carousel from "react-bootstrap/Carousel"
 
 function Zebra() {
   return (
@@ -26,7 +27,7 @@ function Zebra() {
                   <li>Procesamiento de pedidos/devoluciones.</li>
                   <li>Automatizacion de almácenes.</li>
                 </ul>
-                <h5 className="pt-5">Industrias</h5>
+               {/*  <h5 className="pt-5">Industrias</h5>
                 <ul className="list-group list-group-flush">
                   <li className="list-group-item">
                     <i class="fas fa-dolly-flatbed"></i> Venta minorista.
@@ -43,62 +44,32 @@ function Zebra() {
                   <li className="list-group-item">
                     <i class="fas fa-plane"></i> Transporte.
                   </li>
-                </ul>
+                </ul> */}
               </div>
-              <div className="col-md-6 pt-5">
-                <div
-                  id="carouselExampleControls"
-                  className="carousel slide"
-                  data-ride="carousel"
-                >
-                  <div className="carousel-inner">
-                    <div className="carousel-item active">
-                      <img
-                        src="images/marcas/zebra_img_1.jpg"
-                        className="d-block w-100"
-                        alt="dispositivos zebra"
-                      />
-                    </div>
-                    <div className="carousel-item">
-                      <img
-                        src="images/marcas/zebra_img_2.png"
-                        className="d-block w-100"
-                        alt="dispositivos zebra"
-                      />
-                    </div>
-                    <div className="carousel-item">
-                      <img
-                        src="images/marcas/zebra_img_3.jpg"
-                        className="d-block w-100"
-                        alt="dispositivos zebra"
-                      />
-                    </div>
-                  </div>
-                  <a
-                    className="carousel-control-prev"
-                    href="#carouselExampleControls"
-                    role="button"
-                    data-slide="prev"
-                  >
-                    <span
-                      className="carousel-control-prev-icon"
-                      aria-hidden="true"
-                    ></span>
-                    <span className="sr-only">Previous</span>
-                  </a>
-                  <a
-                    className="carousel-control-next"
-                    href="#carouselExampleControls"
-                    role="button"
-                    data-slide="next"
-                  >
-                    <span
-                      className="carousel-control-next-icon"
-                      aria-hidden="true"
-                    ></span>
-                    <span className="sr-only">Next</span>
-                  </a>
-                </div>
+              <div className="col-md-6">
+                <Carousel fade>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src="images/marcas/zebra_img_1.jpg"
+                      alt="First slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src="images/marcas/zebra_img_2.png"
+                      alt="Second slide"
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      className="d-block w-100"
+                      src="images/marcas/zebra_img_3.jpg"
+                      alt="Third slide"
+                    />
+                  </Carousel.Item>
+                </Carousel>
               </div>
             </div>
           </div>
