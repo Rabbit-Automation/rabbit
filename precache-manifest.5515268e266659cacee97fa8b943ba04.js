@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "d91d4701ca96a99ed70f",
+    "revision": "8906217e6e022a488ad0",
     "url": "/rabbit/static/css/main.7bd564e7.chunk.css"
   },
   {
-    "revision": "d91d4701ca96a99ed70f",
-    "url": "/rabbit/static/js/main.464c02d5.chunk.js"
+    "revision": "8906217e6e022a488ad0",
+    "url": "/rabbit/static/js/main.93c9575c.chunk.js"
   },
   {
     "revision": "3c4bba5ee260d0d52b02",
@@ -32,7 +32,7 @@ self.__precacheManifest = [
     "url": "/rabbit/static/media/revicons.2feb69cc.eot"
   },
   {
-    "revision": "de4e68fc2a6a2064a7a5c79e504b89a5",
+    "revision": "8ca78cb4c83040e208376904e759fea7",
     "url": "/rabbit/index.html"
   }
 ];
